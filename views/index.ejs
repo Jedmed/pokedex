@@ -1,0 +1,34 @@
+<% include ../partials/head %>
+
+  <body>
+    <div class="container">
+      <div class="row pokedex">
+        <div class="col-6 border-black">
+          <div class="screen main">
+            <% include ../partials/body %>
+          </div>
+          <div class="d-flex justify-content-around">
+            <a class="btn btn-primary blue align-self-center"></a>
+            <a href="/pokedex/new" class="btn btn-secondary grey">ADD</a>
+            <a href="/pokedex" class="btn btn-secondary grey">HOME</a>
+          </div>
+          <div class="screen">
+            <p>This Pokedex belongs to: <br />
+              <strong>Joseph Edmed</strong></p>
+          </div>
+        </div>
+        <div class="col-6 border-black d-flex">
+          <div class="screen align-self-stretch data">
+            <% if (page === '/pokedex/new') { %>
+              <% include new %>
+              <% } else if (page.includes('edit')) { %>
+                <% include edit %>
+            <% } else { %>
+              <% include show %>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <% include ../partials/footer %>

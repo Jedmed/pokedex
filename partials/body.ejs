@@ -1,0 +1,12 @@
+<h1>Welcome to the Pokedex</h1>
+<h3>Select a Pokemon: </h3>
+<hr />
+<ul class="list-group">
+  <% for (let i=0; i < pokemon.length; i++) { %>
+    <li>
+      <a href="/pokedex/<%= i %>">
+        <%= pokemon[i].name %>
+      </a>
+    </li>
+    <% } %>
+</ul>

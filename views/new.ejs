@@ -1,0 +1,44 @@
+<h1>Add New Pokemon</h1>
+<hr />
+<div class="row">
+  <div class='col-12'>
+    <form action="/pokedex" method="POST">
+      <div class="form-group row">
+        <label class="col-3 col-form-label">Name:</label>
+        <input type="text" class="form-control col-8" name="name" />
+      </div>
+      <div class="form-group row">
+        <label class="col-3 col-form-label">Type: </label>
+        <input type="text" class="form-control col-8" name="type"/>
+      </div>
+      <div class="form-group row">
+        <label class="col-3 col-form-label">Image: </label>
+        <input type="url" class="form-control col-8" name="img"/>
+      </div>
+      Stats: <br />
+      <div class="form-group row">
+        <label class="col-3 offset-1 col-form-label text-right">HP: </label>
+        <input type="text" class="form-control col-2" name="hp" />
+        <label class="col-3 col-form-label text-right">ATK: </label>
+        <input type="text" class="form-control col-2" name="attack" />
+      </div>
+      <div class="form-group row">
+        <label class="col-3 offset-1 col-form-label text-right">DEF: </label>
+        <input type="text" class="form-control col-2" name="defense" />
+        <label class="col-3 col-form-label text-right">SPATK: </label>
+        <input type="text" class="form-control col-2" name="spattack" />
+      </div>
+      <div class="form-group row">
+        <label class="col-3 offset-1 col-form-label text-right">SPDEF: </label>
+        <input type="text" class="form-control col-2" name="spdefense" />
+        <label class="col-3 col-form-label text-right">SPD: </label>
+        <input type="text" class="form-control col-2" name="speed"  />
+      </div>
+      <div class="form-group row">
+        <div class="col-12">
+          <input class="btn" type="submit" value="Add New Pokemon" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
