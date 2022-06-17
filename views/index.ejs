@@ -14,18 +14,19 @@
           </div>
           <div class="screen">
             <p>This Pokedex belongs to: <br />
-              <strong>Joseph Edmed</strong></p>
+              <strong>Joseph Edmed</strong>
+            </p>
           </div>
         </div>
         <div class="col-6 border-black d-flex">
           <div class="screen align-self-stretch data">
-            <% if (page === '/pokedex/new') { %>
+            <% if (page==='/pokedex/new' ) { %>
               <% include new %>
-              <% } else if (page.includes('edit')) { %>
-                <% include edit %>
-            <% } else { %>
-              <% include show %>
-            <% } %>
+                <% } else if (page.includes('edit')) { %>
+                  <% include edit %>
+                    <% } else { %>
+                      <% include show %>
+                        <% } %>
           </div>
         </div>
       </div>
